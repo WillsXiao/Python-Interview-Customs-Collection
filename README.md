@@ -1218,9 +1218,15 @@ res = 'test True' if expression is True else 'test False'
 
 ```python
 # 遍历列表时候，携带索引index
-a = ['a','b','c']
-for index,item in a:
-    print(index,item)
+a = ['a', 'b', 'c']
+for index, item in enumerate(a):
+    print(index, item)
+
+"""returns
+0 a
+1 b
+2 c
+"""
 ```
 
 #### 89.列举 5 个 Python 中的标准模块。
